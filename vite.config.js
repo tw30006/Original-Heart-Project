@@ -1,4 +1,4 @@
-// import 'dotenv/config';
+import 'dotenv/config';
 import { fileURLToPath, URL } from 'node:url';
 
 import { defineConfig } from 'vite';
@@ -9,8 +9,7 @@ import eslintPlugin from 'vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: process.env.NODE_ENV === 'production' ? `/${process.env.REPOSITORY_NAME}/` : '/',
-  base: '/Origin-Heart-Project/',
+  base: process.env.NODE_ENV === 'production' ? `/${process.env.REPOSITORY_NAME}/` : '/',
   plugins: [
     vue(),
     eslintPlugin({
