@@ -31,6 +31,7 @@
 
 <script>
 import axios from 'axios';
+import Swal from 'sweetalert2';
 
 const { VITE_APP_API_URL } = import.meta.env;
 
@@ -54,7 +55,7 @@ export default {
           this.$router.push('/admin/products');
         })
         .catch(() => {
-        //   Swal.fire("登入失敗，請重新輸入！");
+          Swal.fire('登入失敗，請重新輸入！');
         });
     },
   },
