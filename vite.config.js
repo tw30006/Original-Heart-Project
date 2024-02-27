@@ -1,4 +1,4 @@
-import 'dotenv/config';
+// import 'dotenv/config';
 import { fileURLToPath, URL } from 'node:url';
 
 import { defineConfig } from 'vite';
